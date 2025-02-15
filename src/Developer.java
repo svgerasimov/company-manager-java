@@ -1,4 +1,6 @@
-public class Developer extends Employee  {
+import java.io.Serializable;
+
+public class Developer extends Employee implements IPayble, IWorkable {
     private int overtimeHours;
 
     public Developer(double baseSalary, double hourlyRate, int overtimeHours) {
@@ -18,5 +20,11 @@ public class Developer extends Employee  {
     public double calculateWage() {
         // Допустим сверхурочные оплачиваются по удвоенной ставке
         return super.getBaseSalary() + (super.getHourlyRate() * 2 * overtimeHours);
+    }
+
+
+    @Override
+    public void work() {
+        System.out.println("Разработчик пишет код программы, фиксит баги ...");
     }
 }

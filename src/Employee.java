@@ -11,9 +11,9 @@ public class Employee implements IPayble {
         return baseSalary;
     }
 
-    protected void setBaseSalary(double baseSalary) {
+    protected void setBaseSalary(double baseSalary) throws InvalidSalaryException {
         if(baseSalary < 0){
-            throw new IllegalArgumentException("Base Salary cannot be negative");
+            throw new InvalidSalaryException("Base Salary cannot be negative");
         }
         this.baseSalary = baseSalary;
     }

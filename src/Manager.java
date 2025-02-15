@@ -1,6 +1,4 @@
-import java.io.Serializable;
-
-public class Manager extends Employee implements IPayble {
+public class Manager extends Employee implements IPayble, IWorkable  {
     private double managerBonus;
 
     private double baseSalary;
@@ -26,6 +24,12 @@ public class Manager extends Employee implements IPayble {
     @Override
     public double calculateWage() {
         return super.getBaseSalary() + + getBonus();
+    }
+
+
+    @Override
+    public void work() {
+        System.out.println("Менеджер планирует, организует задачи, координирует команду");
     }
 }
 
