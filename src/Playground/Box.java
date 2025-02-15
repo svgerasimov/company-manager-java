@@ -10,15 +10,5 @@ public class Box<T> {
     }
 }
 
-// BOx<Integer> box = new Box<>()
-
-//public class Box {
-//    private Integer value;
-//    public Box(Integer value) {
-//        this.value = value;
-//    }
-//    public Integer getValue() {
-//        return value;
-//    }
-//}
+// new Box<Integer>()
 

@@ -11,4 +11,5 @@ public class NumericBox<T extends Number> {
     public void setValue(T value) {
       this.value = value;
     }
+
 }
