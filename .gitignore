@@ -2,11 +2,9 @@
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
-.idea/misc.xml
-.idea/vcs.xml
-.idea/workspace.xml
-.idea/tasks.xml
-.idea/dictionaries
+*.iml
+.idea/
+
 
 ### Eclipse ###
 .apt_generated
